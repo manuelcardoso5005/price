@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background:  hsl(218, 22%, 67%);
+    min-width: 375px;
+    max-width: 1440px;
+    font-size: 16px;      
+                                                                                                        
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    padding: 40px 35px;
+}
+
+.content {
+    width: 355px;
+    margin: auto;
+}
+
+.up {
+    background: hsl(204, 43%, 93%);
+    border-radius: 15px 15px 0 0;
+}
+
+.up .text .title {
+    color: hsl(179, 62%, 43%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.up .text .subtitle {
+    color: hsl(71, 73%, 54%);
+    margin: 20px 0;
+    font-weight: 700
+}
+
+.up .text .text-info {
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+}
+
+.down {
+    background:  hsl(179, 62%, 43%);
+    border: 1px solid hsl(179, 62%, 43%);
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+
+.price-time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.down .price {
+    color :hsl(204, 43%, 93%);
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.down .time {
+    color :hsla(203, 44%, 93%, 0.747);
+}
+
+.access {
+    color :hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.title-2 {
+    color: hsl(204, 43%, 93%);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    color: hsl(204, 43%, 93%);
+    background:hsl(71, 73%, 54%);
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.whyus { 
+    border: 1px solid rgba(71, 73%, 54%, 0.1);
+    background: hsl(179, 61%, 46%);
+}
+
+.whyus-info {
+    color:hsl(204, 43%, 93%);
+    line-height: 25px;
+}
+
+@media screen and (max-width:800px) {
+
+    main {
+        padding: 50px 0;     
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        width: 650px;
+    }
+
+    .down {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .whyus {
+        width: 50%;
+    }
+
+    .subs {
+        width: 50%;
+    }
+}
